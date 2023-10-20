@@ -1,10 +1,7 @@
-let name = 'Isaac';
-name = 'Acute';
 
-const lastname = 'Ula';
-const condicion = true;
-
-if (condicion){
-    name = 'Hanzel';
+function sayHi(){
+    const greeting = "hola";
+    return greeting;
 }
-console.log('Holaa ' + name + ' ' + lastname);
+
+console.log(sayHi())
