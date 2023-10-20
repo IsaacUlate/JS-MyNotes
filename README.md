@@ -1,2 +1,2 @@
 # Notes
-System for keep a control of the wedding dresses rent 
+The notes are into "intro-js"
