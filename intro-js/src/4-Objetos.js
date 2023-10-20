@@ -4,14 +4,11 @@ const invoice = {
     id: 10,
     name: 'Compras oficina',
     date: new Date(),
-    client: {
-        id:2,
-        name: 'Juan',
-        age: 30,
-    },
+    client: 'Isaac',
     total: 1200,
 };
 
-invoice.client.name = 'Rodri';
+invoice.name = 'Hospital';
 
 console.log(invoice);
+console.log(invoice.name);
