@@ -35,17 +35,8 @@ const invoice = {
     }
 };
 
-console.log(invoice.company?.name)
-console.log(invoice.client?.address?.street)
+invoice.client.name = 'Rodri';
+console.log(invoice);
 
-if (invoice.company?.name) {
-    console.log('nice')
-}else{
-    console.log('no info')
-}
-
-if (invoice.client?.address?.street) {
-    console.log('nice')
-}else{
-    console.log('no info')
-}
+console.log(invoice.greeting());
+console.log(`Total: ${invoice.total()}`);

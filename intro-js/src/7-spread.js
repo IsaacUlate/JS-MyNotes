@@ -35,17 +35,20 @@ const invoice = {
     }
 };
 
-console.log(invoice.company?.name)
-console.log(invoice.client?.address?.street)
+invoice.client.name = 'Rodri';
+console.log(invoice);
 
-if (invoice.company?.name) {
-    console.log('nice')
-}else{
-    console.log('no info')
-}
+console.log(invoice.greeting());
+console.log(`Total: ${invoice.total()}`);
 
-if (invoice.client?.address?.street) {
-    console.log('nice')
-}else{
-    console.log('no info')
-}
+
+const invoice2 = {...invoice}; //spread (...)
+const result = invoice === invoice2;
+
+if (result) console.log(result);
+else console.log('No son iguales');
+
+invoice2.id = 20;
+
+console.log(invoice.id);
+console.log(invoice2.id);
